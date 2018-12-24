@@ -13,54 +13,108 @@
 			
 			font-family: "Lucida Sans Unicode", Verdana, Sans-Serif;
         }
-
-        .terminalPage {
-            background-color: #79AEA3;
+		
+		:root {
 			--terminal-border-color: #333333;
 			--terminal-background-color:#0F0F0F;
-        }
+		}
 
-        .terminal, .terminalHeader {
+       
+		
+		/* overall terminal styling */
+        .navTerminal, .bodyTerminal, .navTerminalHeader, .bodyTerminalHeader {
             width: 74%;
             margin: auto;
 			
         }
-		
-		.terminal * {
-			opacity: 1;
-		}
-		
-		
 
-        .terminalHeader {
+        .navTerminalHeader, .bodyTerminalHeader {
             background-color: var(--terminal-border-color);
             border: 10px solid var(--terminal-border-color);
             border-top: 2px solid var(--terminal-border-color);
+			border-bottom: 0px;
             border-radius: 5px 5px 0 0;
             
 			color: #D9D9D9;
-            font-size: 21px;
+            font-size: 12px;
             text-align: center;
         }
-
-        .terminal {
+		
+		.bodyTerminal, .navTerminal {
 			background-color: var(--terminal-background-color);
             border: 10px solid var(--terminal-border-color);
             border-radius: 0px 0px 5px 5px;
-
-            height: 80vh;
-
 			
             color: #F6F6F6;
+            
+		}
+		
+		/*specifics for navbar terminal */
+		nav {
+			position: fixed;
+			width: 100%;
+			max-height: 10vh;
+			background-color: var(--terminal-border-color);
+		}
+		
+		.navTerminal {
+			
+
+			font-size: 20px;
+			width: 80%;
+			height: 60%;
+		}
+		
+		.navTerminal h1 {
+			display: inline;
+			width: 100%;
+		}
+		
+		.navTerminal a {
+			text-decoration: none;
+			padding: 0px 15px;
+			color: #D9D9D9;
+		}
+		
+		.navTerminal a:hover {
+			background-color: #4DB8FF;
+			color: #000000;
+		}
+		
+		.navTerminal .resumeBlock {
+			float: right;
+
+			background-color: #67D493;
+			border-radius: 5px;
+			color: #000000;
+		}
+		
+		
+		
+
+		/* Specifics for page terminal */
+		.terminalPage {
+            background-color: #79AEA3;
+			padding: 12vh 0 8vh 0;
+			height: 80vh;
+        }
+		
+        .bodyTerminal {
+			height: 100%;
+			
+			font-family: monospace;
 			font-size: 15px;
-            font-family: monospace;
 			overflow: auto;
 			white-space: nowrap;
         }
 		
-		.terminal a {
+		.bodyTerminal a {
 			color: #9bc2ea;
 			white-space: pre;
+		}
+		
+		.bodyTerminal a:visited{
+			color: #5c7b9b;
 		}
 		
 		.terminalPre{
@@ -88,11 +142,28 @@
 </head>
 
 <body>
+	<nav>
+		<p class="navTerminalHeader">
+			JOSH Terminal
+		</p>
+		<div class="navTerminal">
+			<h1>
+				<a href="#">Home</a>
+				<a href="#">Projects</a>
+				<a href="#">Blog</a>
+				<a href="#">Writing</a>
+				<a href="#" class="resumeBlock">Resume</a>
+			</h1>
+			
+		</div>
+	
+	</nav>
+	
     <div class="terminalPage">
-        <p class="terminalHeader">
+        <p class="bodyTerminalHeader">
             JOSH Terminal
         </p>
-        <div class="terminal">
+        <div class="bodyTerminal">
 
 			<!-- Have to have these all left-aligned because html is actually looking at whitespace here -->
 <span class="terminalPre">Welcome to SuzyKersten.com v1.0 	
@@ -141,7 +212,7 @@ Scroll down for more!
 
         //make terminal text be output bit by bit        
         var terminalInit = new TypeIt (
-            ".terminal", 
+            ".bodyTerminal", 
            {speed: 0, nextStringDelay: 1}
         );
 
