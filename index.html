@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Suzy Kersten</title>
+    <meta charset="utf-8">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        .terminalPage {
+            background-color: lightgreen;
+        }
+
+        .terminal, .terminalHeader {
+            width: 80%;
+            margin: auto;
+            
+        }
+
+        .terminalHeader {
+            background-color:grey;
+            border: 5px solid grey;
+            border-top: 2px solid grey;
+            border-radius: 5px 5px 0 0;
+            
+            font-size: 10px;
+            text-align: center;
+        }
+
+        .terminal {
+            background-color: black;
+            border: 5px solid grey;
+            border-radius: 0px 0px 5px 5px;
+
+            height: 80vh;
+
+            color: white;
+            font-family: monospace;
+
+        }
+
+        .terminalUser {
+            background-color: blue;     
+            padding: 0em 1em;
+        }
+        
+        .terminalFolder {
+            display: inline-block;
+            background-color: grey
+
+            color: black;
+            padding: 0em 1em;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    <div class="terminalPage">
+        <p class="terminalHeader">
+            JOSH Terminal
+        </p>
+        <p class="terminal">
+                Welcome to SuzyKersten.com v1.0 <br>
+                <br />
+                Sunday 23 December 2018, 19:30:45<br>
+                Memory Usage: 1693/3843MB (44.05%)<br>
+                Disk Usage: 50/110GB (48%)<br>
+                Support - suzykersten72@outlook.com<br>
+                <br />
+                <span class="terminalUser">user</span><span class="terminalFolder">~</span>
+            
+            
+
+            ./init
+        </p>
+
+    </div>
+
+    <script src="typeit.min.js"></script>
+    <script>
+
+        //make terminal text be output bit by bit        
+        var terminalInit = new TypeIt (
+            ".terminal", 
+           {speed: 1, nextStringDelay: 0}
+        );
+
+        
+    </script>
+
+</body>
+
+</html>
