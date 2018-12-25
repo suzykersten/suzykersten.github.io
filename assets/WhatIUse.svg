@@ -7,9 +7,9 @@
    xmlns="http://www.w3.org/2000/svg"
    id="svg8"
    version="1.1"
-   viewBox="0 0 508 285.75"
+   viewBox="0 0 618.86028 285.74973"
    height="1080"
-   width="1920">
+   width="2339">
   <defs
      id="defs2">
     <clipPath
@@ -36,9 +36,9 @@
     </clipPath>
     <radialGradient
        id="radialGradient-1"
-       cx="0.8366"
+       cx="0.83660001"
        cy="-125.811"
-       r="363.0565"
+       r="363.05649"
        gradientTransform="matrix(0.463,0,0,0.463,76.4644,81.9182)"
        gradientUnits="userSpaceOnUse">
       <stop
@@ -68,6 +68,7 @@
     </rdf:RDF>
   </metadata>
   <g
+     transform="translate(0,-1.6666667e-5)"
      id="layer5">
     <path
        id="path2290-63-2-6-5"
@@ -93,8 +94,13 @@
        id="path3363"
        d="M 80.788428,9.1069686 546.83344,288.68997 H -4.8108515 V -8.7810193 H 109.5805 Z"
        style="fill:#587196;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       id="path2290-63-2-6-5-0-2"
+       d="m 571.56458,249.56676 47.26729,27.85343 v 53.10367 l -47.23913,28.08157 -47.44064,-28.06831 v -52.98081 z"
+       style="display:inline;fill:#587196;fill-opacity:1;stroke:none;stroke-width:0.29738855px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
   </g>
   <g
+     transform="translate(0,-1.6666667e-5)"
      style="display:inline"
      id="layer3">
     <path
@@ -157,8 +163,13 @@
        id="path2290-63-2-3-3-4"
        d="m 37.476956,259.30522 42.05318,24.78089 v 47.24575 l -42.02813,24.98386 -42.2074185,-24.97205 v -47.13645 z"
        style="display:inline;fill:#334f78;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       id="path2290-63-2-6-6-1-9"
+       d="m 571.56458,255.38763 42.05318,24.78089 v 47.24574 l -42.02813,24.98386 -42.20741,-24.97205 v -47.13644 z"
+       style="display:inline;fill:#334f78;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
   </g>
   <g
+     transform="translate(0,-1.6666667e-5)"
      style="opacity:1"
      id="layer4">
     <g
