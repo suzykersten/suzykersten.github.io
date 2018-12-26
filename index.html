@@ -147,15 +147,23 @@
 			background-color: #ACD1CA;
 		}
 		
+		.sectionDark {
+			 background-color: #79AEA3;
+		}
+		
 		
 		.section {
 			margin: 0;
-			padding: 0 10%;
+			padding: 0 5%;
 			overflow: hidden;
 		}
 		
 		.noleftpadding {
 			padding-left: 0;
+		}
+		
+		.norightpadding {
+			padding-right: 0;
 		}
 		
 		.fullscreen {
@@ -182,6 +190,46 @@
 			right: 0;
 			padding: inherit;
 			text-align: right;
+		}
+		
+		
+		.verticalCenter {
+			padding-top: 75px;
+			padding-bottom: 75px;
+		}
+		
+		.inlineList {
+			overflow: auto;
+			white-space: nowrap;
+		}
+		
+		.inlineList > * {
+			display: inline-block;
+			
+			max-width: 250px;
+			padding-left:100px;
+		}
+		
+		.inlineList *:first-child{
+			padding-left: 0;
+		}
+		
+		.project img{
+			height: 200px;
+			width: 200px;
+			border: 1px solid #707070;
+			border-radius: 100%;
+			margin: 0 25px;
+		}
+		
+		.project h2 {
+			font-size: 40px;
+		}
+		
+		.project h2, .project p {
+			text-align: center;
+			white-space: normal;
+			margin: 0;
 		}
 		
     </style>
@@ -254,10 +302,44 @@ Scroll down for more!
         </div>
     </div>
 
+	<!-- My Toolbox -->
 	<div class="section noleftpadding sectionLight fullscreen noleftpadding">
 		<h1 class="rightText">My<br>Toolbox</h1>
 		<img class="sectionFiller leftAlign" src="/assets/WhatIUse.svg" /> 
 	</div>
+	
+	<!-- Projects -->
+	<div class="section sectionDark norightpadding">
+		<div class="inlineList verticalCenter">
+			<h1>PRO<br>JECTS</h1>
+			
+			<div class="project">
+				<img src="https://via.placeholder.com/200">
+				<h2>Byron</h2>
+				<p>This is a test project that I made the other day, it was fun.</p>
+			</div>
+			
+			<div class="project">
+				<img src="https://via.placeholder.com/200">
+				<h2>Byron</h2>
+				<p>This is a test project that I made the other day, it was fun.</p>
+			</div>
+			
+			<div class="project">
+				<img src="https://via.placeholder.com/200">
+				<h2>Byron</h2>
+				<p>This is a test project that I made the other day, it was fun.</p>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class="section sectionDark norightpadding">
+		<div class="inlineList verticalCenter">
+					
+		</div>
+	</div>
+	
 	
     <script src="typeit.min.js"></script>
     <script>
