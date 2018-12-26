@@ -205,12 +205,13 @@
 		
 		.inlineList > * {
 			display: inline-block;
+			white-space: normal;
 			
 			max-width: 250px;
-			padding-left:100px;
+			margin-left:100px;
 		}
 		
-		.inlineList *:first-child{
+		.inlineList > *:first-child{
 			padding-left: 0;
 		}
 		
@@ -228,8 +229,53 @@
 		
 		.project h2, .project p {
 			text-align: center;
-			white-space: normal;
 			margin: 0;
+		}
+		
+		
+		
+		.writingPiece {
+			
+			width: 250px;
+		}
+		
+		.writingPiece h2 {
+			box-shadow: -5px 3px 6px;
+			
+			margin: 0;
+			padding: 20px;
+			min-height: 150px;
+			height: 75%;
+			
+			background-color: #FFE8D2;
+			border-radius:  25px 25px 0 0;
+			
+			font-size: 35px;
+			font-style: italic;
+			
+		}
+		
+		.writingPiece div {
+			box-shadow: -5px 3px 6px;
+			
+			position: relative;
+			height: 20%;
+			background-color: #6E562B;
+			border-radius: 0 0 25px 25px;
+			padding: 5px 20px;
+		}
+		
+		.writingPiece span, .writingPiece i {
+			margin: 0;
+			color: #EBEFDC;
+			display: inline-block;
+		}
+		
+		.writingPiece i{
+			padding-top: 5px;
+			font-size: 40px;
+			text-align: right;
+			float: right;
 		}
 		
     </style>
@@ -333,12 +379,60 @@ Scroll down for more!
 		</div>
 	</div>
 	
-	
-	<div class="section sectionDark norightpadding">
+	<!-- Writing -->
+	<div class="section sectionLight norightpadding">
 		<div class="inlineList verticalCenter">
+			
+			<h1>WRI<br>TING</h1>
+			
+			<div class="writingPiece">
+				<h2>
+					The Willow Whispers
+				</h2>
+				<div>
+					<span>120 words<br>
+					Poetry, Nature</span>
 					
+					<i class="fas fa-scroll"></i>
+				</div>
+				
+			</div>
+			
+			<div class="writingPiece">
+				<h2>
+					The Willow Whispers
+				</h2>
+				<div>
+					<span>120 words<br>
+					Poetry, Nature</span>
+					
+					<i class="fas fa-newspaper"></i>
+				</div>
+				
+			</div>
+			
+			
+			<div class="writingPiece">
+				<h2>
+					The Willow Whispers
+				</h2>
+				<div>
+					<span>120 words<br>
+					Poetry, Nature</span>
+					
+					<i class="fas fa-newspaper"></i>
+				</div>
+				
+			</div>
+			
+			
+		
 		</div>
 	</div>
+	
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
 	
 	
     <script src="typeit.min.js"></script>
