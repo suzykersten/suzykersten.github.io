@@ -36,6 +36,8 @@
             
             z-index: 1;
 			overflow: hidden;
+            
+            font-size: 2.5vh;
 		}
 		
 
@@ -94,7 +96,7 @@
 			height: 80%;
 			
 			font-family: monospace;
-			font-size: 15px;
+			font-size: 2.5vh;
             
 			overflow: auto;
 			white-space: nowrap;
@@ -173,31 +175,39 @@
 			margin: 0;
 		}
 		
-		.rightText {
+        .section .rightText {
+            
 			position: absolute;
 			right: 0;
+            
 			padding: inherit;
+            padding-top: 5vw;;
 			text-align: right;
+            
+            font-size: 5vw;
 		}
 		
 		
         /*===========================
         =   LISTS                   =
         ============================*/
-		.verticalCenter {
-			padding-top: 75px;
-			padding-bottom: 75px;
-		}
 		
 		.inlineList {
+            padding-top: 75px;
+			padding-bottom: 75px;
+            
 			overflow: auto;
 			white-space: nowrap;
+            
+            
 		}
 		
 		.inlineList > * {
 			display: inline-block;
 			white-space: normal;
 			
+            
+            
 			width: 250px;
 			margin-left:100px;
 		}
@@ -205,6 +215,10 @@
 		.inlineList > *:first-child{
 			padding-left: 0;
 		}
+        
+        .inlineList > h1{
+            
+        }
         
         
 		/*===========================
@@ -307,18 +321,24 @@
 		.footer {
 			background-color: #2D2D2D;
 			color: #F6F6F6;
-			font-size: 40px;
+			font-size: 2vw;
 			
-			padding-top: 100px;
-			padding-bottom: 75px;
+			padding-top: 5%;
 		}
 		
 		.footer div {
 			display: inline-block;
-			width: 49%;
-			min-width: 600px;
+            margin: 0;
+            padding: 0;
+        
+			
+			
 			margin-bottom: 25px;
 		}
+        
+        .footer div:nth-child(odd) {
+            width: 55%;
+        }
 		
 		.footer a {
 			text-decoration: none;
@@ -329,8 +349,10 @@
 		}
 
 		.footer i {
-			font-size: 3em; 
-			min-width: 125px;
+			width: 6vw;
+            font-size: 5vw;
+            position: relative;
+            bottom: 1vw;
 		}
 		
     </style>
