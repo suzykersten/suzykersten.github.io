@@ -1,0 +1,5 @@
+todo:
+	- style the scrollbars
+	- make my own text writing thing (just remove it for now)
+	- make list titles responsive
+	- make standard font size for everything
