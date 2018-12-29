@@ -1,8 +1,26 @@
----
-layout: default
-title: Suzy Kersten
----	
-<div id="home" class="section sectionDark fullscreen">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Suzy Kersten</title>
+    <meta charset="utf-8">
+
+</head>
+
+<body>
+    
+	<nav>
+        <h1>
+            <a href="#home"><i class="fas fa-home"></i>&nbsp;Home</a>
+            <a href="#projects"><i class="fas fa-project-diagram"></i>&nbsp;Projects</a>
+			<a href="#writing"><i class="fas fa-book"></i>&nbsp;Writing</a>
+            <a href="#blog"><i class="fas fa-rss"></i>&nbsp;Blog</a>
+            <a href="assets/KerstenResume.pdf" class="resumeBlock"><i class="fas fa-file"></i>&nbsp;Resume</a>
+        </h1>
+	</nav>
+	
+    <div class="container">
+		<div id="home" class="section sectionDark fullscreen">
 	<p class="bodyTerminalHeader">
 		JOSH Terminal
 	</p>
@@ -89,24 +107,41 @@ Scroll down for more!
 
 		<h1>WRI<br>TING</h1>
 		
-		{% for post in site.posts %}
-			{% if post.path contains 'writing' %}
+		
+			
 			<div class="writingPiece">
-				<a href="{{post.url}}">
+				<a href="/Story2.html">
 					<h2>
-						{{ post.title }}
+						Story that's prose
 					</h2>
 					<div>
-						<span>{{ post.words }} words<br>
-						{{post.tags}}</span>
+						<span>50 words<br>
+						nature</span>
 
-						<i class="fas {{post.icon}}"></i>
+						<i class="fas fa-book-open"></i>
 
 					</div>
 				</a>
 			</div>
-			{% endif %}
-		{% endfor %}
+			
+		
+			
+			<div class="writingPiece">
+				<a href="/Story.html">
+					<h2>
+						Poem
+					</h2>
+					<div>
+						<span>50 words<br>
+						nature</span>
+
+						<i class="fas fa-scroll"></i>
+
+					</div>
+				</a>
+			</div>
+			
+		
 	</div>
 </div>
 
@@ -170,3 +205,16 @@ Scroll down for more!
 	</div>
 
 </div>
+	
+	</div>
+	
+	
+	<link rel="stylesheet" href="style.css">
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	
+	
+	<script src="typeTerminal.js"></script>
+</body>
+
+</html>
