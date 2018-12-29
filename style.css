@@ -317,12 +317,14 @@ nav a:hover {
 
 .blogPiece .crop {
 	overflow: hidden;
+	
 }
 
 .blogPiece img {
 	height: 50%;
 	min-width: 100%;
 	overflow: hidden;
+	width: 200px;
 }
 
 /*===========================

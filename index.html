@@ -128,6 +128,22 @@ Scroll down for more!
 
 		<h1>BL<br>OG</h1>
 
+		{% for post in site.posts %}
+			{% if post.path contains 'blog' %}
+		<div class="blogPiece">		
+		<a href="{{ post.url }}">
+					<h2>
+						{{ post.title }}
+					</h2>
+					<div class="crop">
+						<img src="{{ post.image }}">
+
+					</div>
+				</a>
+		</div>
+			{% endif %}
+		{% endfor %}
+		
 		<div class="blogPiece">
 			<h2>
 				Why you can't get that thing done
