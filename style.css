@@ -215,37 +215,32 @@ nav a:hover {
 
 .inlineList {
 	display: flex;
+	
 	padding-top: 75px;
 	padding-bottom: 75px;
 
 	overflow: auto;
 	white-space: nowrap;
-
-
 }
 
 .inlineList > * {
-	display: inline-block;
 	white-space: normal;
-
-
-	
-	width: 350px;
+	flex-shrink: 0;
 	margin-left: 100px;
+	min-width: 350px;
+	max-width: 350px;
 }
 
 .inlineList > *:first-child {
-	
 	padding-left: 0;
 }
 
+/* Center the title of the lists */
 .inlineList > h1 {
 	margin: auto;
 	margin-left: 0;
 	margin-right: 0;
-	display: flex;
 	align-content: center;
-	min-width: 350px;
 }
 
 
@@ -277,9 +272,11 @@ nav a:hover {
 /*===========================
 =   WRITING LIST            =
 ============================*/
-.writingPiece {
-
-	width: 250px;
+.writingPiece > a{
+	display: block;
+	width: 80%;
+	height: 100%;
+	margin: auto;
 }
 
 .writingPiece h2 {
@@ -295,13 +292,12 @@ nav a:hover {
 
 	font-size: 30px;
 	font-style: italic;
-
+	overflow: hidden;
 }
 
 .writingPiece div {
 	box-shadow: -5px 3px 6px;
 
-	position: relative;
 	height: 20%;
 	background-color: #6E562B;
 	border-radius: 0 0 25px 25px;
@@ -315,7 +311,14 @@ nav a:hover {
 	display: inline-block;
 }
 
+.writingPiece span {
+	max-width: 75%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
 .writingPiece i {
+	max-width: 25%;
 	padding-top: 5px;
 	font-size: 40px;
 	text-align: right;
@@ -326,22 +329,29 @@ nav a:hover {
 =   BLOG LIST               =
 ============================*/
 .blogPiece {
+	
+}
+
+.blogPiece > a{
+	display: block;
+	width: 80%;
+	height: 100%;
+	margin: auto;
+	
 	background-color: #B2BFD3;
-	height: 250px;
+	border-radius: 25px;
+	
 	overflow: hidden;
 	box-shadow: -5px 3px 6px;
 }
 
+
 .blogPiece h2 {
 	height: 50%;
 	margin: 5px 15px 0px 15px;
-	font-size: 20px;
+	font-size: 30px;
 }
 
-.blogPiece .crop {
-	overflow: hidden;
-	
-}
 
 .blogPiece img {
 	height: 50%;

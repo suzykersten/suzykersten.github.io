@@ -2,6 +2,5 @@ todo:
 	- style the scrollbars
 	- make list titles responsive
 	- make standard font size for everything
-	- Make the anchors properly jump to
 	- make the anchors have smooth scrolling
 

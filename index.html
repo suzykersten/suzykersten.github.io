@@ -113,15 +113,15 @@ Scroll down for more!
 		{% for post in site.posts %}
 			{% if post.path contains 'blog' %}
 		<div class="blogPiece">		
-		<a href="{{ post.url }}">
-					<h2>
-						{{ post.title }}
-					</h2>
-					<div class="crop">
-						<img src="{{ post.image }}">
+			<a href="{{ post.url }}">
+				<h2>
+					{{ post.title }}
+				</h2>
+				<div class="crop">
+					<img src="{{ post.image }}">
 
-					</div>
-				</a>
+				</div>
+			</a>
 		</div>
 			{% endif %}
 		{% endfor %}
