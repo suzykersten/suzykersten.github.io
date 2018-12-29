@@ -214,6 +214,7 @@ nav a:hover {
 ============================*/
 
 .inlineList {
+	display: flex;
 	padding-top: 75px;
 	padding-bottom: 75px;
 
@@ -228,27 +229,37 @@ nav a:hover {
 	white-space: normal;
 
 
-
-	width: 250px;
+	
+	width: 350px;
 	margin-left: 100px;
 }
 
 .inlineList > *:first-child {
+	
 	padding-left: 0;
 }
 
-.inlineList > h1 {}
+.inlineList > h1 {
+	margin: auto;
+	margin-left: 0;
+	margin-right: 0;
+	display: flex;
+	align-content: center;
+	min-width: 350px;
+}
 
 
 /*===========================
 =   PROJECT LIST            =
 ============================*/
 .project img {
-	height: 200px;
-	width: 200px;
+	display: block;
+	height: 250px;
+	width: 250px;
+	margin: auto;
 	border: 1px solid #707070;
 	border-radius: 100%;
-	margin: 0 25px;
+	;
 	object-fit: cover;
 }
 
