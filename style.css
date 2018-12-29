@@ -249,6 +249,7 @@ nav a:hover {
 	border: 1px solid #707070;
 	border-radius: 100%;
 	margin: 0 25px;
+	object-fit: cover;
 }
 
 .project h2 {
