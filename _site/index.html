@@ -1,8 +1,26 @@
----
-layout: default
-title: Suzy Kersten
----	
-<div id="home" class="section sectionDark fullscreen">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Suzy Kersten</title>
+    <meta charset="utf-8">
+
+</head>
+
+<body>
+    
+	<nav>
+        <h1>
+            <a href="#home"><i class="fas fa-home"></i>&nbsp;Home</a>
+            <a href="#projects"><i class="fas fa-project-diagram"></i>&nbsp;Projects</a>
+			<a href="#writing"><i class="fas fa-book"></i>&nbsp;Writing</a>
+            <a href="#blog"><i class="fas fa-rss"></i>&nbsp;Blog</a>
+            <a href="assets/KerstenResume.pdf" class="resumeBlock"><i class="fas fa-file"></i>&nbsp;Resume</a>
+        </h1>
+	</nav>
+	
+    <div class="container">
+		<div id="home" class="section sectionDark fullscreen">
 	<p class="bodyTerminalHeader">
 		JOSH Terminal
 	</p>
@@ -61,17 +79,23 @@ Scroll down for more!
 	<div class="inlineList verticalCenter">
 		<h1>PRO<br>JECTS</h1>
 
-		{% for post in site.posts %}
-			{% if post.path contains 'projects' %}
+		
+			
 			<div class="project">
-				<a href="{{ post.url }}">
-					<img src="{{ post.image }}">
-					<h2>{{ post.title }}</h2>
-					<p>{{ post.flavor }}</p>
+				<a href="/Port-A-Cade.html">
+					<img src="/assets/projects/portacade.jpg">
+					<h2>Port-A-Cade</h2>
+					<p>An arcade-style cabinet for playing retro games, built for APSU's ACM Chapter.</p>
 				</a>
 			</div>
-			{% endif %}
-		{% endfor %}
+			
+		
+			
+		
+			
+		
+			
+		
 	</div>
 </div>
 
@@ -83,24 +107,45 @@ Scroll down for more!
 
 		<h1>WRI<br>TING</h1>
 		
-		{% for post in site.posts %}
-			{% if post.path contains 'writing' %}
+		
+			
+		
+			
 			<div class="writingPiece">
-				<a href="{{post.url}}">
+				<a href="/spirit-of-the-wood.html">
 					<h2>
-						{{ post.title }}
+						Spirit of the Wood
 					</h2>
 					<div>
-						<span>{{ post.words }} words<br>
-						{{post.tags}}</span>
+						<span>2,856 words<br>
+						nature,relationships</span>
 
-						<i class="fas {{post.icon}}"></i>
+						<i class="fas fa-book-open"></i>
 
 					</div>
 				</a>
 			</div>
-			{% endif %}
-		{% endfor %}
+			
+		
+			
+		
+			
+			<div class="writingPiece">
+				<a href="/Story.html">
+					<h2>
+						Acquaintance.
+					</h2>
+					<div>
+						<span>162  words<br>
+						relationships</span>
+
+						<i class="fas fa-scroll"></i>
+
+					</div>
+				</a>
+			</div>
+			
+		
 	</div>
 </div>
 
@@ -110,21 +155,27 @@ Scroll down for more!
 
 		<h1>BL<br>OG</h1>
 
-		{% for post in site.posts %}
-			{% if post.path contains 'blog' %}
+		
+			
+		
+			
+		
+			
 		<div class="blogPiece">		
-			<a href="{{ post.url }}">
+			<a href="/blog/blog-introduction.html">
 				<h2>
-					{{ post.title }}
+					Blog Introduction
 				</h2>
 				<div class="crop">
-					<img src="{{ post.image }}">
+					<img src="/assets/blog/introduction.jpg">
 
 				</div>
 			</a>
 		</div>
-			{% endif %}
-		{% endfor %}
+			
+		
+			
+		
 
 	</div>
 </div>
@@ -152,3 +203,16 @@ Scroll down for more!
 	</div>
 
 </div>
+	
+	</div>
+	
+	
+	<link rel="stylesheet" href="/style.css">
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	
+	
+	<script src="/typeTerminal.js"></script>
+</body>
+
+</html>
