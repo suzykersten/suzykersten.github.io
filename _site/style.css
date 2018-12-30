@@ -16,23 +16,25 @@ body {
 
 /*specifics for navbar terminal */
 nav {
-	padding: 0 5%;
+	margin: 0;
+	padding: 5px 5% 0 5%;
 	width: 90%;
 
 	display: block;
 	
-	height: 10vh;
+	min-height: 5vh;
 	background-color: #454545;
 
-	box-shadow: -4px 5px 6px;
 
 	z-index: 1;
 	overflow: hidden;
 
-	font-size: 2.5vh;
+	font-size: 2vh;
 }
 
-
+nav h1 {
+	margin: 0;
+}
 
 nav a {
 	text-decoration: none;
@@ -47,7 +49,6 @@ nav a:hover {
 
 .resumeBlock {
 	float: right;
-
 	background-color: #67D493;
 	border-radius: 5px;
 	color: #000000;
@@ -60,13 +61,13 @@ nav a:hover {
 /* overall terminal styling */
 .bodyTerminal,
 .bodyTerminalHeader {
-	width: 74%;
+	width: 100%;
 	margin: auto;
 
 }
 
 .bodyTerminalHeader {
-	margin-top: 5vh;
+	margin-top: 3vh;
 
 	background-color: var(--terminal-border-color);
 	border: 10px solid var(--terminal-border-color);
@@ -86,10 +87,10 @@ nav a:hover {
 
 	color: #F6F6F6;
 
-	height: 80%;
+	height: 85%;
 
 	font-family: monospace;
-	font-size: .7vw;
+	font-size: 1vw;
 
 	overflow: auto;
 	white-space: nowrap;
@@ -120,7 +121,7 @@ nav a:hover {
 .terminalCentered {
 	text-align: center;
 	margin: auto;
-	width: 80%;
+	width: 100%;
 }
 
 .cursor {
@@ -168,7 +169,7 @@ nav a:hover {
 }
 
 .fullscreen {
-	height: 100vh;
+	height: 95vh;
 }
 
 .leftAlign {
