@@ -1,6 +1,25 @@
 todo:
-	- style the scrollbars
+	-get a domain name
+	- fix styling on links inside terminal
+	
 	- make list titles responsive
 	- make standard font size for everything
+	
+	- fix the navbar to work when the screen is really thin
+	- fix the font sizing on the intro terminal
+	
+	- make better styling for each post.
+	
+	-make one more writing post: poem?
+	
+	- make project post about local hack day, Rake, this website
+	
+	- fix linkedin link on the bottom of the page
+	
+	
+nice to have
+	- make some nice transitions and animations on things, like my toolbox. It's too static right now.
+	- make navbar pop back whenever you scroll upwards
 	- make the anchors have smooth scrolling
+	- style the scrollbars
 
