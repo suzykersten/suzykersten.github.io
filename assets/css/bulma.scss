@@ -1,0 +1,19 @@
+---
+---
+
+@charset "utf-8";
+
+//My own colors
+
+$primary: #ACD1CA;
+$info: #79AEA3;
+
+
+//use dark for the navbar color
+//can't use is-dark for footer for some reason
+
+
+
+$size-1: 5rem;
+
+@import "bulma";

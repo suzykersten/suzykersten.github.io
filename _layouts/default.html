@@ -1,38 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="has-navbar-fixed-top">
 
 <head>
-    <title>{{ page.title }}</title>
-    <meta charset="utf-8">
+	<title>{{ page.title }}</title>
+	<meta charset="utf-8">
 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-	<link rel="stylesheet" href="/style.css">
-	
-    
-	<nav>
-        <h1>
-            <a href="/"><i class="fas fa-home"></i>&nbsp;Home</a>
-            <a href="/#projects"><i class="fas fa-project-diagram"></i>&nbsp;Projects</a>
-			<a href="/#writing"><i class="fas fa-book"></i>&nbsp;Writing</a>
-            <a href="/#blog"><i class="fas fa-rss"></i>&nbsp;Blog</a>
-            <a href="/assets/KerstenResume.pdf" class="resumeBlock"><i class="fas fa-file"></i>&nbsp;Resume</a>
-        </h1>
+	<link rel="stylesheet" href="/assets/css/bulma.css">
+	<link rel="stylesheet" href="/assets/css/style.css">
+
+
+	<nav class="navbar is-fixed-top is-dark is-size-4" role="navigation" aria-label="main navigation">
+		<div class="container">
+			<div class="navbar-brand">
+				<a class="navbar-item" href="/">
+					<h1>Home</h1>
+				</a>
+
+				<a role="button" class="navbar-burger" data-target="mainNavbar" aria-label="menu" aria-expanded="false" data-targe="navbarBasicExample">
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+				</a>
+			</div>
+			<div id="mainNavbar" class="navbar-menu">
+				<div class="navbar-start">
+
+					<a class="navbar-item" href="/#projects">
+						<h1>Projects</h1>
+					</a>
+					<a class="navbar-item" href="/#writing">
+						<h1>Writing</h1>
+					</a>
+					<a class="navbar-item" href="/#blog">
+						<h1>Blog</h1>
+					</a>
+					<a class="navbar-item" href="/#footer">
+						<h1>Contact</h1>
+					</a>
+
+				</div>
+
+				<div class="navbar-end">
+					<div class="navbar-item">
+						<a class="button is-success has-text-black is-size-4" href="/assets/KerstenResume.pdf">
+							Resume
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
 	</nav>
-	
-    <div class="container">
-		{{ content }}
-	
-	</div>
-	
-	
-	
+
+	{{ content }}
+
+	<footer id="footer" class="footer has-background-dark">
+		<div class="container">
+
+			<div class="columns is-multiline  ">
+				<div class="column ">
+					<a class="has-text-light" href="mailto:williamkersten72@outlook.com">
+						<span class="icon is-large">
+							<i class="fas fa-envelope fa-3x"></i>
+						</span>
+						<span class="is-size-4">
+							&ensp;williamkersten72@outlook.com
+						</span>
+					</a>
+					<br>
+
+					<a class="has-text-light" href="https://www.linkedin.com/in/william-suzy-kersten-852303112/">
+						<span class="icon is-large">
+							<i class="fab fa-linkedin fa-3x"></i>
+						</span>
+						<span class="is-size-4">
+							&ensp;LinkedIn.com
+						</span>
+					</a>
+				</div>
+
+				<div class="column ">
+
+					<a class="has-text-light" href="https://twitter.com/suzy_kersten">
+						<span class="icon is-large">
+							<i class="fab fa-twitter fa-3x"></i>
+						</span>
+						<span class="is-size-4">
+							&ensp;twitter.com/suzy_kersten
+						</span>
+
+					</a>
+
+					<br>
+
+					<a class="has-text-light" href="https://github.com/suzykersten">
+						<span class="icon is-large">
+							<i class="fab fa-github fa-3x"></i>
+						</span>
+						<span class="is-size-4">
+							&ensp;GitHub.com/suzykersten
+						</span>
+
+					</a>
+				</div> <!-- column -->
+			</div> <!-- columns -->
+		</div> <!-- container -->
+	</footer>
+
+
 	<!-- fontawesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-	
-	
+
+
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+
+			// Get all "navbar-burger" elements
+			const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+			// Check if there are any navbar burgers
+			if ($navbarBurgers.length > 0) {
+
+				// Add a click event on each of them
+				$navbarBurgers.forEach(el => {
+					el.addEventListener('click', () => {
+
+						// Get the target from the "data-target" attribute
+						const target = el.dataset.target;
+						const $target = document.getElementById(target);
+
+						// Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+						el.classList.toggle('is-active');
+						$target.classList.toggle('is-active');
+
+					});
+				});
+			}
+
+		});
+	</script>
 	<script src="/typeTerminal.js"></script>
+	
 </body>
 
 </html>
