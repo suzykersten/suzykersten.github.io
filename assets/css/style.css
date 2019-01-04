@@ -298,3 +298,10 @@ body {
 	top: .25em;
 
 }
+
+
+@media screen and (min-width: 1280px) {
+	.post {
+		width: 50%;
+	}
+}
