@@ -281,12 +281,17 @@ body {
 	font-size: 30px;
 }
 
+.blogPiece .crop {
+	min-height: 50%;
+    background-color: black;
+}
 
 .blogPiece img {
-	height: 50%;
-	min-width: 100%;
-	overflow: hidden;
-	width: 200px;
+	
+	height: 100%;
+    object-fit: cover;
+    min-width: 100%;
+    overflow: hidden;
 }
 
 /*===========================
