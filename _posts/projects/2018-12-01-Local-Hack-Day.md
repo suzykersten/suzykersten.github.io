@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Local Hack Day"
-image: ""
+image: "/assets/projects/localhackday.jpg"
 flavor: "Organizing a local hackathon for APSU, attended by 12 students."
 date: 2018-12-01
 ---
