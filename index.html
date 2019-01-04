@@ -54,17 +54,98 @@ Yb, `88     88     d8'     IP'`Yb IP'`Yb                                    Yb, 
 </section><!-- terminal hero -->
 
 
-<!--- need to specify a viewport for the svg so that it scales correctly -->
+<!-- my toolbox -->
+<section class="section hexagons">
+		<div class="container">
 
-<section class="hero sectionLight is-fullheight-with-navbar myToolbox">
-	<div class="container is-hidden-touch">
-		<h1 class=" is-size-1 has-text-right">My<br>Toolbox</h1>
+			<!-- title box for on mobile -->
+			<div class="box is-hidden-tablet">
+				<h1 class="title has-text-centered ">My Toolbox</h1>
+			</div>
 
-		</div>
-	
-	<h1 class="is-size-2-tablet is-size-3-mobile has-text-right is-hidden-desktop">My<br>Toolbox</h1>
+			<div class="columns is-multiline is-variable is-1">
 
-</section>
+				<!-- text for when columns aren't collapsed -->
+				<div class="is-size-1-fullhd is-size-2-widescreen is-size-3 is-hidden-mobile has-text-centered toolboxTitle">
+					My<br>Tool<br>box
+
+				</div>
+
+
+
+
+				<!-- Each column is the entire left half rows, IE 
+					first column half is html5 and css3. Done 
+					so that things stack nicely on mobile, where entire
+					right half will come down below left half.
+				-->
+				<div class="column is-half">
+					<div class="columns is-variable is-1 is-mobile">
+						<div class="column is-2">
+						</div>
+						<div class="column">
+							<img src="/assets/toolbox/html5.svg" />
+						</div>
+						<div class="column">
+							<img src="/assets/toolbox/javascript.svg" />
+						</div>
+
+
+						<div class="column is-2">
+
+						</div>
+					</div> <!-- end top row -->
+
+					<div class="columns is-variable is-1 is-mobile">
+						<div class="column">
+							<img src="/assets/toolbox/css3.svg" />
+						</div>
+						<div class="column">
+							<img src="/assets/toolbox/php.svg" />
+						</div>
+						<div class="column">
+							<img src="/assets/toolbox/git.svg" />
+						</div>
+					</div><!-- end bottom row -->
+				</div> <!-- end left two rows -->
+
+
+				<!-- Right two rows of hexagons, IE c++, java, android -->
+				<div class="column is-half">
+
+					<div class="columns is-variable is-1 is-mobile">
+						<!-- hidden on tablet because that's where title text goes -->
+						<div class="column is-2">
+						</div>
+
+						<div class="column">
+							<img src="/assets/toolbox/c++.svg" />
+						</div>
+						<div class="column">
+							<img src="/assets/toolbox/csharp.svg" />
+						</div>
+
+						<div class="column is-2">
+						</div>
+					</div> <!-- end top row -->
+
+					<div class="columns is-variable is-1 is-mobile">
+						<div class="column">
+							<img src="/assets/toolbox/java.svg" />
+						</div>
+						<div class="column">
+							<img src="/assets/toolbox/android.svg" />
+						</div>
+						<div class="column">
+							<img src="/assets/toolbox/adobe.svg" />
+						</div>
+
+					</div> <!-- end bottom row -->
+				</div> <!-- end right two rows -->
+
+			</div><!-- end columns display -->
+		</div><!-- end container -->
+	</section>
 
 <section id="projects" class="section sectionDark">
 	<div class="container">

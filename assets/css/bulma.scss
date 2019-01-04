@@ -12,8 +12,10 @@ $info: #79AEA3;
 //use dark for the navbar color
 //can't use is-dark for footer for some reason
 
+.is-size-0 {
+	font-size: 5rem;
+}
 
-
-$size-1: 5rem;
+//$size-1: 5rem;
 
 @import "bulma";

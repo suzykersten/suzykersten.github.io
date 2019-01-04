@@ -131,24 +131,25 @@ body {
 	color: #334f78;
 }
 
-
-.myToolbox {
-	background-image: url(/assets/WhatIUse.svg);
-	background-clip: content-box;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: bottom left;
+.hexagons {
+	background-color: #587196;
 }
 
-.rightText {
+.flip {
+	-moz-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+	filter: FlipH;
+	-ms-filter: "FlipH";
+}
 
+.toolboxTitle {
 	position: absolute;
-	right: 0;
-
-
-	text-align: right;
-
-	font-size: 5vw;
+	width: 100%;
+	z-index: 1;
+	color: white;
+	top: 5%;
 }
 
 
