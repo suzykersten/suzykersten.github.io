@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "kersten.codes webpage"
-image: ""
+image: "/assets/projects/thiswebsite.jpg"
 flavor: "A personal webpage to show who I am, what I do, and get me hired!"
 date: 2019-01-03
 ---
@@ -43,3 +43,7 @@ The domain came from namecheap, and it's hosted on GitHub Pages.
 ## One-word feeling about the project:
 
 Relieved. I've been working a while on this and had it on my mind for a while, and it's done. I can easily add things on, the base is there and that's what I needed.
+
+
+
+*Cover Photo by [Christopher Gower](https://unsplash.com/photos/m_HRfLhgABo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/web-development?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)](https://unsplash.com/search/photos/web-development?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)*
