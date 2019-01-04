@@ -6,10 +6,6 @@ flavor: "An arcade-style cabinet for playing retro games, built for APSU's ACM C
 date: 2018-12-28
 ---
 
-# Port-A-Cade
-
-December 2018 - January 2019
-
 ## What it is
 
 A bunch of wood, cut and nailed together in the shape of an arcade cabinet. It plays retro games, anything before the N64/Playstation is fair game for it.

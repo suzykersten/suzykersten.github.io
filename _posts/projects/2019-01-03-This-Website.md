@@ -1,14 +1,10 @@
 ---
 layout: post
-title: "kersten.codes webpage"
+title: "kersten.codes"
 image: "/assets/projects/thiswebsite.jpg"
 flavor: "A personal webpage to show who I am, what I do, and get me hired!"
 date: 2019-01-03
 ---
-
-# kersten.codes webpage
-
-Dec 19, 2018 - Present
 
 ## What it is
 

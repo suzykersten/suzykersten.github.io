@@ -2,13 +2,9 @@
 layout: post
 title: "Local Hack Day"
 image: ""
-flavor: "Organizing a local hackathon for APSU, from venue to food, with the help of MLH, the CSCI department, and the ACM."
+flavor: "Organizing a local hackathon for APSU, attended by 12 students."
 date: 2018-12-01
 ---
-
-# Organizing Local Hack Day
-
-November - December 2018
 
 ## What it is
 
