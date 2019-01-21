@@ -1,2 +1,5 @@
 name: William Kersten
+title: William Kersten
 permalink: none
+plugins:
+  - jekyll-sitemap
