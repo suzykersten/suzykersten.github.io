@@ -174,3 +174,75 @@ Yb, `88     88     d8'     IP'`Yb IP'`Yb                                    Yb, 
 		</div>
 	</div>
 </section>
+
+<section id="writing" class="section sectionLight">
+	<div class="container">
+		<div class="columns is-vcentered">
+
+			<h1 class="column is-3 is-size-1 is-size-2-mobile has-text-centered-mobile">
+				WRI<br class="is-hidden-mobile">TING
+			</h1>
+
+			<div class="column is-9 inlineList">
+			{% for post in site.posts %}
+			{% if post.path contains 'writing' %}
+			<div class=" writingPiece">
+				<a href="{{post.url}}">
+					<h2 class="is-size-3">
+						{{ post.title }}
+					</h2>
+					<div>
+						<span class="is-size-5 is-size-7-mobile">
+							{{ post.words }} words<br>{{post.tags}}
+						</span>
+
+						<i class="fas {{post.icon}}"></i>
+
+					</div>
+				</a>
+			</div>
+			{% endif %}
+			{% endfor %}
+
+
+				</div>
+		</div>
+	</div>
+</section>
+
+
+
+<section id="blog" class="section sectionDark">
+	<div class="container">
+		<div class="columns is-vcentered">
+
+			<h1 class="column is-3 is-size-1 has-text-centered-mobile">
+				BL<br class="is-hidden-mobile">OG
+			</h1>
+
+			<div class="column is-9 inlineList">
+			{% for post in site.posts %}
+				{% if post.path contains 'blog' %}
+			<div class="blogPiece">		
+				<a href="{{ post.url }}">
+					<h2 class="is-size-3">
+						{{ post.title }}
+					</h2>
+					<div class="crop">
+						<img src="{{ post.image }}">
+
+					</div>
+				</a>
+			</div>
+				{% endif %}
+			{% endfor %}
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+
+
+
