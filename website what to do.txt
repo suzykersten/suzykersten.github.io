@@ -1,5 +1,0 @@
-nice to have
-	- make some nice transitions and animations on things, like my toolbox. It's too static right now.
-	- make the anchors have smooth scrolling
-	- style the scrollbars
-

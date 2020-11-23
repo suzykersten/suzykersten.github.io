@@ -12,10 +12,7 @@ function doTyping(divToType, charactersToType, msBetweenType) {
 	typeChildren(divToType, toType.childNodes, charactersToType, msBetweenType, function() {
 		divToType.innerHTML += "<span class='cursor'>|</span>";
 	});
-
-
 }
-
 
 //This works like a for loop that's always controlled by callbacks: if it finds a text node, the next 'iteration' is 
 // done when that text node is done typing. If it's a tag, the next 'iteration' is called when that whole NODE is finished.
@@ -24,7 +21,6 @@ function typeChildren(actualNode, knownChildNodes, charas, ms, callback) {
 	if (knownChildNodes === undefined || knownChildNodes.length === 0) {
 		callback();
 	}
-
 
 	var nextIterationFunc = function() {
 		var arraySlice = [];
@@ -54,14 +50,11 @@ function typeChildren(actualNode, knownChildNodes, charas, ms, callback) {
 	}
 }
 
-
-
 //Actually type out the parts of the string, x characters at a time
 function type(whereToType, toType, charactersToType, msToWait, callback) {
 	//if we don't have enough charas to type, just type what's left
 	charactersToType = toType.length > charactersToType ? charactersToType : toType.length;
 	whereToType.innerHTML += toType.substring(0, charactersToType);
-
 
 	//cut out what we just typed of string, wait x seconds, type more
 	if (toType.length > charactersToType) {
@@ -78,17 +71,12 @@ function type(whereToType, toType, charactersToType, msToWait, callback) {
 	}
 }
 
-
 function toTree(html) {
 	var doc = new DOMParser().parseFromString(html, 'text/html');
 	return doc.body;
 }
 
-
-
-
 //actually call the typing on testDiv
 var startDiv = document.getElementById("bodyTerminal");
 
 doTyping(startDiv, 3, 1);
-
